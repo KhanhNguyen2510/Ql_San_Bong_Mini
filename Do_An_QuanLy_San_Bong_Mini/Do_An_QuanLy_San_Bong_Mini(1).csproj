@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EDA1BFFD-AD9F-422C-90E0-9836C6F46644}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Do_An_QuanLy_San_Bong_Mini</RootNamespace>
+    <AssemblyName>Do_An_QuanLy_San_Bong_Mini</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataClassesTest.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClassesTest.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="fChangePasssword_NV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChangePasssword_NV.Designer.cs">
+      <DependentUpon>fChangePasssword_NV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fdatsan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fdatsan.Designer.cs">
+      <DependentUpon>fdatsan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThanhTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThanhTien.Designer.cs">
+      <DependentUpon>fThanhTien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fKhach_Hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fKhach_Hang.Designer.cs">
+      <DependentUpon>fKhach_Hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQuan_Ly_Dich_Vu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuan_Ly_Dich_Vu.Designer.cs">
+      <DependentUpon>fQuan_Ly_Dich_Vu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQuan_Ly_Nhan_Vien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuan_Ly_Nhan_Vien.Designer.cs">
+      <DependentUpon>fQuan_Ly_Nhan_Vien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQuan_Ly_San_Bong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuan_Ly_San_Bong.Designer.cs">
+      <DependentUpon>fQuan_Ly_San_Bong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromDatSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromDatSan.Designer.cs">
+      <DependentUpon>FromDatSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fromThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fromThanhToan.Designer.cs">
+      <DependentUpon>fromThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fChangePasswordAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChangePasswordAdmin.Designer.cs">
+      <DependentUpon>fChangePasswordAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAdmin.Designer.cs">
+      <DependentUpon>fAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNhanVien.Designer.cs">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="DataClassesTest.dbml.layout">
+      <DependentUpon>DataClassesTest.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="fChangePasssword_NV.resx">
+      <DependentUpon>fChangePasssword_NV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fdatsan.resx">
+      <DependentUpon>fdatsan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThanhTien.resx">
+      <DependentUpon>fThanhTien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fKhach_Hang.resx">
+      <DependentUpon>fKhach_Hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQuan_Ly_Dich_Vu.resx">
+      <DependentUpon>fQuan_Ly_Dich_Vu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQuan_Ly_Nhan_Vien.resx">
+      <DependentUpon>fQuan_Ly_Nhan_Vien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQuan_Ly_San_Bong.resx">
+      <DependentUpon>fQuan_Ly_San_Bong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromDatSan.resx">
+      <DependentUpon>FromDatSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fromThanhToan.resx">
+      <DependentUpon>fromThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fChangePasswordAdmin.resx">
+      <DependentUpon>fChangePasswordAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAdmin.resx">
+      <DependentUpon>fAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNhanVien.resx">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataClassesTest.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClassesTest.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserDN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnhNen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SanBong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XinChaoNew.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ausini-S-n-B-ng-Kh-i-X-y-D-ng-Ch-i-Cho-B-Trai.jpg_960x960.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-football-field-plan-image_1233865 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hhhhh.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
